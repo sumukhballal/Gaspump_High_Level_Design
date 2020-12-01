@@ -2,24 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dcd7aeab-a7cb-427b-ba47-2288f54250a0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/OutputProcessor/Strategy/StorePrices/StorePrices.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/OutputProcessor/Strategy/StorePrices/StorePrices1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/OutputProcessor/Strategy/StorePrices/StorePrices2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Readme.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/EFSM/MDA_EFSM.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/EFSM/MDA_EFSM.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/EFSM/State/S0.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/EFSM/State/S0.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/EFSM/State/S1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/EFSM/State/S1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/EFSM/State/S2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/EFSM/State/S2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/EFSM/State/S3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/EFSM/State/S3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/EFSM/State/S4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/EFSM/State/S4.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/EFSM/State/S5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/EFSM/State/S5.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Datastore/Datastore1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Datastore/Datastore1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Datastore/Datastore2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Datastore/Datastore2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Driver/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Driver/Driver.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/EFSM/State/Start.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/EFSM/State/Start.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/EFSM/State/State.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/EFSM/State/State.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Factory/AbstractFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Factory/AbstractFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Factory/GasPump1Factory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Factory/GasPump1Factory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Factory/GasPump2Factory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Factory/GasPump2Factory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/InputProcessor/GasPump1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/InputProcessor/GasPump1.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/OutputProcessor/OutputProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/OutputProcessor/OutputProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/OutputProcessor/Strategy/StorePrices/StorePrices.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/OutputProcessor/Strategy/StorePrices/StorePrices.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/OutputProcessor/Strategy/StorePrices/StorePrices1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/OutputProcessor/Strategy/StorePrices/StorePrices1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/OutputProcessor/Strategy/StorePrices/StorePrices2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/OutputProcessor/Strategy/StorePrices/StorePrices2.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -41,6 +38,7 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -58,6 +56,31 @@
         </RuleState>
       </list>
     </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list />
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
   </component>
   <component name="SvnConfiguration">
     <configuration />

@@ -37,7 +37,7 @@ public class GasPump1 {
         if(a>0)
         {
             Datastore1 datastore1 = (Datastore1) this.datastore;
-            datastore1.temp_a=a;
+            datastore1.setTemp_a(a);
             mda_efsm.Activate();
         }
         else

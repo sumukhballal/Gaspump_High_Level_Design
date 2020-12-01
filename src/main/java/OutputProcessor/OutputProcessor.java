@@ -11,4 +11,9 @@ public class OutputProcessor {
     {
         this.storePrices= abstractFactory.getStorePrices();
     }
+
+    public void StorePrices()
+    {
+        this.storePrices.storePrices();
+    }
 }

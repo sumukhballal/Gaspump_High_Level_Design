@@ -21,18 +21,13 @@ public class Driver {
 					input = scanner.next().charAt(0);
 
 					while(input!='q') {
+						gasPump1.displayOperations();
 						switch (input) {
 							case '0':
 								System.out.println("Activate > ");
 								System.out.println("Please enter price of gas! ");
-								try {
-									int a = Integer.parseInt(scanner.nextLine());
-									gasPump1.Activate(a);
-								}
-								catch(Exception e)
-								{
-									System.out.println("Please enter a valid number!");
-								}
+								int a = Integer.parseInt(scanner.nextLine());
+								gasPump1.Activate(a);
 								break;
 							default:
 								System.out.println("Invalid. \n Please choose one one of the following options. \n");

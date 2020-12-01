@@ -19,7 +19,7 @@ public class Start extends State {
        {
             mda_efsm.SetState(1);
             OutputProcessor outputProcessor=mda_efsm.getOutputProcessor();
-            outputProcessor
+            outputProcessor.StorePrices();
        }
     }
 }
