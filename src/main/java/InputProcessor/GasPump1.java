@@ -5,6 +5,7 @@ import Datastore.Datastore1;
 import EFSM.MDA_EFSM;
 import Factory.AbstractFactory;
 import Factory.GasPump1Factory;
+import OutputProcessor.OutputProcessor;
 
 public class GasPump1 {
 
@@ -19,6 +20,7 @@ public class GasPump1 {
 
     public void setAbstractFactory(AbstractFactory abstractFactory) {
         this.abstractFactory = abstractFactory;
+        this.mda_efsm.setOutputProcessor(new OutputProcessor(abstractFactory));
     }
 
     public void setDatastore(AbstractFactory abstractFactory) {

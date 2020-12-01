@@ -1,4 +1,9 @@
 package EFSM.State;
 
-public class S3 {
+import EFSM.MDA_EFSM;
+
+public class S3 extends State {
+    public S3(MDA_EFSM mda_efsm) {
+        super(mda_efsm);
+    }
 }

@@ -1,7 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dcd7aeab-a7cb-427b-ba47-2288f54250a0" name="Default Changelist" comment="" />
+    <list default="true" id="dcd7aeab-a7cb-427b-ba47-2288f54250a0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/OutputProcessor/Strategy/StorePrices/StorePrices.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/OutputProcessor/Strategy/StorePrices/StorePrices1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/OutputProcessor/Strategy/StorePrices/StorePrices2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/EFSM/MDA_EFSM.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/EFSM/MDA_EFSM.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/EFSM/State/S0.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/EFSM/State/S0.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/EFSM/State/S1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/EFSM/State/S1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/EFSM/State/S2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/EFSM/State/S2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/EFSM/State/S3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/EFSM/State/S3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/EFSM/State/S4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/EFSM/State/S4.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/EFSM/State/S5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/EFSM/State/S5.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/EFSM/State/Start.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/EFSM/State/Start.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/EFSM/State/State.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/EFSM/State/State.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Factory/AbstractFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Factory/AbstractFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Factory/GasPump1Factory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Factory/GasPump1Factory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/InputProcessor/GasPump1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/InputProcessor/GasPump1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/OutputProcessor/OutputProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/OutputProcessor/OutputProcessor.java" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,7 +34,14 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1kxXkAUyiNNIttp0Us8Gd3wlvTL" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+  </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\sumuk\Desktop\IIT\Fall 20\Courses\SSA\Project\Phase-2\code\src\main\java" />
@@ -45,5 +71,16 @@
       <updated>1606643356079</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
