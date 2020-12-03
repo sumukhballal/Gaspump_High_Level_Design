@@ -1,0 +1,15 @@
+PayMsg
+StoreCash
+RejectMsg
+SetPrice
+SetInitialValues
+PumpGasUnit
+GasPumpedMsg
+PrintReceipt
+ReturnCash
+WrongPinMsg
+StorePin
+EnterPinMsg
+InitializeData
+EjectCard
+SetW

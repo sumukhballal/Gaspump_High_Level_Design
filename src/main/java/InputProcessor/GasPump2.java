@@ -1,27 +1,122 @@
 package InputProcessor;
 
 import Datastore.Datastore;
+import Datastore.Datastore2;
 import EFSM.MDA_EFSM;
 import Factory.AbstractFactory;
 import Factory.GasPump2Factory;
+import OutputProcessor.OutputProcessor;
 
 public class GasPump2 {
     AbstractFactory abstractFactory;
     MDA_EFSM mda_efsm;
     Datastore datastore;
 
-    public GasPump2()
+    public GasPump2(AbstractFactory abstractFactory)
     {
-        this.mda_efsm=new MDA_EFSM();
+        this.abstractFactory=abstractFactory;
+        this.datastore=abstractFactory.getDatastore();
+        this.mda_efsm=new MDA_EFSM(new OutputProcessor(abstractFactory));
     }
 
-    public void setAbstractFactory(GasPump2Factory gasPump2Factory) {
-        this.abstractFactory=gasPump2Factory;
+    public void displayOperations() {
+
+        System.out.println("" +
+                "Select Operation for GasPump 2 : \n" +
+                "0.) Start \n" +
+                "1.) PayCredit \n" +
+                "2.) Reject \n" +
+                "3.) PayDebit \n" +
+                "4.) Pin \n" +
+                "5.) Cancel \n" +
+                "6.) Approved \n" +
+                "7.) Diesel \n" +
+                "8.) Regular \n" +
+                "9.) Super \n" +
+                "10.) StartPump\n" +
+                "11.) PumpGallon\n" +
+                "12.) StopPump \n" +
+                "13.) FullTank \n" +
+                "q.) Quit\n");
     }
 
-    public void setDatastore(GasPump2Factory gasPump2Factory) {
-        this.datastore=gasPump2Factory.getDatastore();
+    public void Activate(float a, float b, float c) {
+        if(a>0 && b>0 && c>0)
+        {
+            Datastore2 datastore2 = (Datastore2) this.datastore;
+            datastore2.setTemp_a(a);
+            datastore2.setTemp_b(b);
+            datastore2.setTemp_c(c);
+            mda_efsm.Activate();
+        }
+        else
+        {
+            System.out.println("Failed. Please input value greater than 0 for all values!");
+        }
+    }
+    public void Start() {
+        mda_efsm.Start();
+    }
+    public void PayCredit() {
+        mda_efsm.PayCredit();
+    }
+    public void Reject() {
+        mda_efsm.Reject();
+    }
+    public void PayDebit(String p) {
+        Datastore2 datastore2 = (Datastore2) this.datastore;
+        datastore2.setTemp_p(p);
+        mda_efsm.PayDebit();
+    }
+    public void Pin(String x) {
+        Datastore2 datastore2 = (Datastore2) this.datastore;
+        String pin = datastore2.getPin();
+
+        if(x.equals(pin))
+        {
+            mda_efsm.CorrectPin();
+        }
+       else
+        {
+            mda_efsm.IncorrectPin(1);
+        }
+
+    }
+    public void Cancel() {
+        mda_efsm.Cancel();
+    }
+    public void Approved() {
+        mda_efsm.Approved();
+    }
+    public void Diesel() {
+        mda_efsm.SelectGas(2);
+    }
+    public void Regular() {
+        mda_efsm.SelectGas(1);
+    }
+    public void Super() {
+        mda_efsm.SelectGas(3);
+    }
+    public void StartPump() {
+        Datastore2 datastore2 = (Datastore2) this.datastore;
+        float price = datastore2.getPrice();
+
+        if (price > 0) {
+            mda_efsm.StartPump();
+        }
+        else
+        {
+            System.out.println("Price not set to 0!");
+        }
+    }
+    public void PumpGallon() {
+        mda_efsm.Pump();
+    }
+    public void StopPump() {
+        mda_efsm.StopPump();
     }
 
-
+    public void FullTank() {
+        mda_efsm.StopPump();
+    }
 }

@@ -2,21 +2,79 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dcd7aeab-a7cb-427b-ba47-2288f54250a0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Readme.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/OutputProcessor/Strategy/CancelMsg/CancelMsg.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/OutputProcessor/Strategy/CancelMsg/CancelMsg1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/OutputProcessor/Strategy/CancelMsg/CancelMsg2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/OutputProcessor/Strategy/DisplayMenu/DisplayMenu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/OutputProcessor/Strategy/DisplayMenu/DisplayMenu1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/OutputProcessor/Strategy/DisplayMenu/DisplayMenu2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/OutputProcessor/Strategy/EjectCard/EjectCard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/OutputProcessor/Strategy/EjectCard/EjectCard1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/OutputProcessor/Strategy/EjectCard/EjectCard2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/OutputProcessor/Strategy/EnterPinMsg/EnterPinMsg.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/OutputProcessor/Strategy/EnterPinMsg/EnterPinMsg1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/OutputProcessor/Strategy/EnterPinMsg/EnterPinMsg2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/OutputProcessor/Strategy/GasPumpedMsg/GasPumpedMsg.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/OutputProcessor/Strategy/GasPumpedMsg/GasPumpedMsg1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/OutputProcessor/Strategy/GasPumpedMsg/GasPumpedMsg2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/OutputProcessor/Strategy/InitializeData/InitializeData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/OutputProcessor/Strategy/InitializeData/InitializeData1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/OutputProcessor/Strategy/InitializeData/InitializeData2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/OutputProcessor/Strategy/PayMsg/PayMsg.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/OutputProcessor/Strategy/PayMsg/PayMsg1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/OutputProcessor/Strategy/PayMsg/PayMsg2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/OutputProcessor/Strategy/PrintReceipt/PrintReceipt.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/OutputProcessor/Strategy/PrintReceipt/PrintReceipt1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/OutputProcessor/Strategy/PrintReceipt/PrintReceipt2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/OutputProcessor/Strategy/PumpGasUnit/PumpGasUnit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/OutputProcessor/Strategy/PumpGasUnit/PumpGasUnit1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/OutputProcessor/Strategy/PumpGasUnit/PumpGasUnit2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/OutputProcessor/Strategy/RejectMsg/RejectMsg.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/OutputProcessor/Strategy/RejectMsg/RejectMsg1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/OutputProcessor/Strategy/RejectMsg/RejectMsg2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/OutputProcessor/Strategy/ReturnCash/ReturnCash.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/OutputProcessor/Strategy/ReturnCash/ReturnCash1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/OutputProcessor/Strategy/ReturnCash/ReturnCash2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/OutputProcessor/Strategy/SetInitialValues/SetInitialValues.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/OutputProcessor/Strategy/SetInitialValues/SetInitialValues1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/OutputProcessor/Strategy/SetInitialValues/SetInitialValues2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/OutputProcessor/Strategy/SetPrice/SetPrice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/OutputProcessor/Strategy/SetPrice/SetPrice1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/OutputProcessor/Strategy/SetPrice/SetPrice2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/OutputProcessor/Strategy/SetW/SetW.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/OutputProcessor/Strategy/SetW/SetW1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/OutputProcessor/Strategy/SetW/SetW2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/OutputProcessor/Strategy/StoreCash/StoreCash.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/OutputProcessor/Strategy/StoreCash/StoreCash1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/OutputProcessor/Strategy/StoreCash/StoreCash2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/OutputProcessor/Strategy/StorePin/StorePin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/OutputProcessor/Strategy/StorePin/StorePin1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/OutputProcessor/Strategy/StorePin/StorePin2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/OutputProcessor/Strategy/WrongPinMsg/WrongPinMsg.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/OutputProcessor/Strategy/WrongPinMsg/WrongPinMsg1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/OutputProcessor/Strategy/WrongPinMsg/WrongPinMsg2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/OutputProcessor/Strategy/script.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/OutputProcessor/Strategy/test.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/TestDriver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Datastore/Datastore1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Datastore/Datastore1.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Datastore/Datastore2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Datastore/Datastore2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Driver/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Driver/Driver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/EFSM/MDA_EFSM.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/EFSM/MDA_EFSM.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/EFSM/State/S0.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/EFSM/State/S0.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/EFSM/State/S1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/EFSM/State/S1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/EFSM/State/S2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/EFSM/State/S2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/EFSM/State/S3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/EFSM/State/S3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/EFSM/State/S4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/EFSM/State/S4.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/EFSM/State/S5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/EFSM/State/S5.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/EFSM/State/Start.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/EFSM/State/Start.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/EFSM/State/State.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/EFSM/State/State.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Factory/AbstractFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Factory/AbstractFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Factory/GasPump1Factory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Factory/GasPump1Factory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Factory/GasPump2Factory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Factory/GasPump2Factory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/InputProcessor/GasPump1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/InputProcessor/GasPump1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/InputProcessor/GasPump2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/InputProcessor/GasPump2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/OutputProcessor/OutputProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/OutputProcessor/OutputProcessor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/OutputProcessor/Strategy/StorePrices/StorePrices.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/OutputProcessor/Strategy/StorePrices/StorePrices.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/OutputProcessor/Strategy/StorePrices/StorePrices1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/OutputProcessor/Strategy/StorePrices/StorePrices1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/OutputProcessor/Strategy/StorePrices/StorePrices2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/OutputProcessor/Strategy/StorePrices/StorePrices2.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -35,8 +93,11 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1kxXkAUyiNNIttp0Us8Gd3wlvTL" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
@@ -105,5 +166,8 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>

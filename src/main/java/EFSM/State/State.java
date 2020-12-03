@@ -1,12 +1,15 @@
 package EFSM.State;
 
 import EFSM.MDA_EFSM;
+import OutputProcessor.OutputProcessor;
 
 public class State {
     MDA_EFSM mda_efsm;
+    OutputProcessor outputProcessor;
 
-    public State(MDA_EFSM mda_efsm) {
+    public State(MDA_EFSM mda_efsm, OutputProcessor outputProcessor) {
         this.mda_efsm=mda_efsm;
+        this.outputProcessor=outputProcessor;
     }
 
     public void Activate() {
@@ -33,19 +36,15 @@ public class State {
     public void IncorrectPin(int max) {
         System.out.println("Invalid!");
     }
-    public void Correctpin() {
-        System.out.println("Invalid!");
-    }
-    public void Reject() {
-        System.out.println("Invalid!");
-    }
+    public void CorrectPin() { System.out.println("Invalid!"); }
+    public void Reject() { System.out.println("Invalid!"); }
     public void StopPump() {
         System.out.println("Invalid!");
     }
     public void Pump() {
         System.out.println("Invalid!");
     }
-    public void StarttPump() {
+    public void StartPump() {
         System.out.println("Invalid!");
     }
     public void SelectGas(int g) {

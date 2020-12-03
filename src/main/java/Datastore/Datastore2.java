@@ -7,15 +7,24 @@ public class Datastore2 extends Datastore {
     String temp_p;
     String pin;
     float price;
-    int G;
-    float total;
+    int G;          /* Total Gallons */
+    String gasType;    /* Gastype String */
+    float total;    /* Total Cost */
     float Rprice;
     float Dprice;
     float temp_c;
     float Sprice;
 
+    public void setGasType(String gasType) {
+        this.gasType = gasType;
+    }
+
     public float getTemp_a() {
         return temp_a;
+    }
+
+    public String getGasType() {
+        return gasType;
     }
 
     public void setTemp_a(float temp_a) {

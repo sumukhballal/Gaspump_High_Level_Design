@@ -7,18 +7,17 @@ public class MDA_EFSM {
 
     State state;
     State[] LS;
-    OutputProcessor outputProcessor;
 
-    public MDA_EFSM()
+    public MDA_EFSM(OutputProcessor outputProcessor)
     {
         LS=new State[7];
-        LS[0]=new Start(this);
-        LS[1]=new S0(this);
-        LS[2]=new S1(this);
-        LS[3]=new S2(this);
-        LS[4]=new S3(this);
-        LS[5]=new S4(this);
-        LS[6]=new S5(this);
+        LS[0]=new Start(this, outputProcessor);
+        LS[1]=new S0(this, outputProcessor);
+        LS[2]=new S1(this, outputProcessor);
+        LS[3]=new S2(this, outputProcessor);
+        LS[4]=new S3(this, outputProcessor);
+        LS[5]=new S4(this, outputProcessor);
+        LS[6]=new S5(this, outputProcessor);
         SetState(0);
     }
 
@@ -31,20 +30,48 @@ public class MDA_EFSM {
         return this.state;
     }
 
-    public State[] GetStates()
-    {
-        return this.LS;
-    }
-
     public void Activate() {
         state.Activate();
     }
 
-    public void setOutputProcessor(OutputProcessor outputProcessor) {
-        this.outputProcessor=outputProcessor;
+    public void Start() {
+        state.Start();
+    }
+    public void Reject() {
+        state.Reject();
+    }
+    public void Cancel() {
+        state.Cancel();
+    }
+    public void Approved() {
+        state.Approved();
+    }
+    public void StartPump() {
+        state.StartPump();
+    }
+    public void Pump() {
+        state.Pump();
+    }
+    public void StopPump() {
+        state.StopPump();
+    }
+    public void SelectGas(int g) {
+        state.SelectGas(g);
+    }
+    public void CorrectPin() {
+        state.CorrectPin();
+    }
+    public void IncorrectPin(int max) {
+        state.IncorrectPin(max);
+    }
+    public void PayCash() {
+        state.PayCash();
+    }
+    public void PayCredit() {
+        state.PayCredit();
+    }
+    public void PayDebit() {
+        state.PayDebit();
     }
 
-    public OutputProcessor getOutputProcessor() {
-        return this.outputProcessor;
-    }
 }

@@ -6,20 +6,14 @@ import OutputProcessor.OutputProcessor;
 public class Start extends State {
 
 
-    public Start(MDA_EFSM mda_efsm) {
-        super(mda_efsm);
+    public Start(MDA_EFSM mda_efsm, OutputProcessor outputProcessor) {
+        super(mda_efsm, outputProcessor);
     }
 
+    @Override
     public void Activate()
     {
-       State currState = mda_efsm.GetState();
-       State[] LS = mda_efsm.GetStates();
-
-       if(currState.equals(LS[0]))
-       {
-            mda_efsm.SetState(1);
-            OutputProcessor outputProcessor=mda_efsm.getOutputProcessor();
-            outputProcessor.StorePrices();
-       }
+       outputProcessor.StorePrices();
+       mda_efsm.SetState(1);
     }
 }
