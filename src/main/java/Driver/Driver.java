@@ -29,8 +29,13 @@ public class Driver {
 							case "0":
 								System.out.println("Option : Activate \n ");
 								System.out.println("Please enter price of gas! \n > ");
-								int a = Integer.parseInt(scanner.next());
-								gasPump1.Activate(a);
+								try {
+									int a = Integer.parseInt(scanner.next());
+									gasPump1.Activate(a);
+								}
+								catch (NumberFormatException e) {
+									System.out.println("Please insert an integer value!");
+								}
 								break;
 							case "1":
 								System.out.println("Option : Start \n ");
@@ -91,13 +96,78 @@ public class Driver {
 
 						switch (input) {
 							case "0":
-								System.out.println("Activating ... ");
-								System.out.println("Please enter price of gas! ");
+								System.out.println("Option : Activate \n ");
+								System.out.println("Please enter price of gas! \n > ");
 								int a = Integer.parseInt(scanner.next());
-								//gasPump2.Activate(a);
+								int b = Integer.parseInt(scanner.next());
+								int c = Integer.parseInt(scanner.next());
+								gasPump2.Activate(a,b,c);
+								break;
+							case "1":
+								System.out.println("Option : Start \n ");
+								gasPump2.Start();
+								break;
+							case "2":
+								System.out.println("Option : PayCredit \n ");
+								gasPump2.PayCredit();
+								break;
+							case "3":
+								System.out.println("Option : Reject \n ");
+								gasPump2.Reject();
+								break;
+							case "4":
+								System.out.println("Option : PayDebit \n ");
+								System.out.println("Please enter pin! \n > ");
+								String pin = scanner.next();
+								gasPump2.PayDebit(pin);
+								break;
+							case "5":
+								System.out.println("Option : Pin \n ");
+								System.out.println("Please enter pin! \n > ");
+								String x = scanner.next();
+								gasPump2.Pin(x);
+								break;
+							case "6":
+								System.out.println("Option : Cancel \n ");
+								gasPump2.Cancel();
+								break;
+							case "7":
+								System.out.println("Option : Approved \n ");
+								gasPump2.Approved();
+								break;
+							case "8":
+								System.out.println("Option : Diesel \n ");
+								gasPump2.Diesel();
+								break;
+							case "9":
+								System.out.println("Option : Regular \n ");
+								gasPump2.Regular();
+								break;
+							case "10":
+								System.out.println("Option : Super \n ");
+								gasPump2.Super();
+								break;
+							case "11":
+								System.out.println("Option : StartPump \n ");
+								gasPump2.StartPump();
+								break;
+							case "12":
+								System.out.println("Option : PumpGallon \n ");
+								gasPump2.PumpGallon();
+								break;
+							case "13":
+								System.out.println("Option : StopPump \n ");
+								gasPump2.StopPump();
+								break;
+							case "14":
+								System.out.println("Option : FullTank \n ");
+								gasPump2.FullTank();
+								break;
+							case "q":
+								System.out.println("Exiting Program! \n");
 								break;
 							default:
-								System.out.println("Invalid. \n Please choose one one of the following options. \n");
+								System.out.println("Invalid Option selected! \n");
 								break;
 						}
 					}
