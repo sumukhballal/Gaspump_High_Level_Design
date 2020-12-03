@@ -87,7 +87,7 @@ public class Driver {
 				case "2":
 					GasPump2 gasPump2=startGasPump2();
 					gasPump2.displayOperations();
-					input = scanner.next();
+					input = "x";
 
 					while(!input.equals("q")) {
 						System.out.println();
@@ -97,9 +97,11 @@ public class Driver {
 						switch (input) {
 							case "0":
 								System.out.println("Option : Activate \n ");
-								System.out.println("Please enter price of gas! \n > ");
+								System.out.println("Please enter price of Regular Gas! \n > ");
 								int a = Integer.parseInt(scanner.next());
+								System.out.println("Please enter price of Diesel Gas! \n > ");
 								int b = Integer.parseInt(scanner.next());
+								System.out.println("Please enter price of Super Gas! \n > ");
 								int c = Integer.parseInt(scanner.next());
 								gasPump2.Activate(a,b,c);
 								break;

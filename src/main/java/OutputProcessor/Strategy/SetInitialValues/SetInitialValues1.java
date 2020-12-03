@@ -13,5 +13,6 @@ public class SetInitialValues1 extends SetInitialValues {
         Datastore1 datastore1 = (Datastore1) datastore;
         datastore1.setTotal(0);
         datastore1.setL(0);
+        System.out.println("Pump Ready!");
     }
 }

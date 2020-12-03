@@ -11,10 +11,10 @@ public class PumpGasUnit2 extends PumpGasUnit {
 
     public void pumpGasUnit() {
         Datastore2 datastore2 = (Datastore2) datastore;
-        int litres=datastore2.getG();
+        int gallon=datastore2.getG();
         float price=datastore2.getPrice();
 
-        datastore2.setG(litres++);
-        datastore2.setTotal(litres * price);
+        datastore2.setG(++gallon);
+        datastore2.setTotal(gallon * price);
     }
 }

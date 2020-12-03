@@ -23,20 +23,21 @@ public class GasPump2 {
 
         System.out.println("" +
                 "Select Operation for GasPump 2 : \n" +
-                "0.) Start \n" +
-                "1.) PayCredit \n" +
-                "2.) Reject \n" +
-                "3.) PayDebit \n" +
-                "4.) Pin \n" +
-                "5.) Cancel \n" +
-                "6.) Approved \n" +
-                "7.) Diesel \n" +
-                "8.) Regular \n" +
-                "9.) Super \n" +
-                "10.) StartPump\n" +
-                "11.) PumpGallon\n" +
-                "12.) StopPump \n" +
-                "13.) FullTank \n" +
+                "0.) Activate \n" +
+                "1.) Start \n" +
+                "2.) PayCredit \n" +
+                "3.) Reject \n" +
+                "4.) PayDebit \n" +
+                "5.) Pin \n" +
+                "6.) Cancel \n" +
+                "7.) Approved \n" +
+                "8.) Diesel \n" +
+                "9.) Regular \n" +
+                "10.) Super \n" +
+                "11.) StartPump\n" +
+                "12.) PumpGallon\n" +
+                "13.) StopPump \n" +
+                "14.) FullTank \n" +
                 "q.) Quit\n");
     }
 

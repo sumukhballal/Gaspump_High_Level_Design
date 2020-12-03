@@ -10,6 +10,7 @@ public class SetW2 extends SetW {
     }
 
     public void setW(int v) {
-        System.out.println("Invalid operation!");
+        Datastore2 datastore2 = (Datastore2) datastore;
+        datastore2.setW(v);
     }
 }

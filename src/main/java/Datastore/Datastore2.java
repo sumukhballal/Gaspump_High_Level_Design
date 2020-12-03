@@ -14,6 +14,15 @@ public class Datastore2 extends Datastore {
     float Dprice;
     float temp_c;
     float Sprice;
+    int w;
+
+    public int getW() {
+        return w;
+    }
+
+    public void setW(int w) {
+        this.w = w;
+    }
 
     public void setGasType(String gasType) {
         this.gasType = gasType;

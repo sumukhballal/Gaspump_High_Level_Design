@@ -14,7 +14,7 @@ public class PumpGasUnit1 extends PumpGasUnit {
         int litres=datastore1.getL();
         int price=datastore1.getPrice();
 
-        datastore1.setL(litres++);
+        datastore1.setL(++litres);
         datastore1.setTotal(litres * price);
     }
 }
