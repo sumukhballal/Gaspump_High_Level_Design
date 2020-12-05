@@ -20,6 +20,10 @@ import OutputProcessor.Strategy.StorePin.StorePin;
 import OutputProcessor.Strategy.StorePrices.StorePrices;
 import OutputProcessor.Strategy.WrongPinMsg.WrongPinMsg;
 
+
+/* Abstract Factory abstract class */
+
+
 public abstract class AbstractFactory {
 
     public abstract Datastore getDatastore();

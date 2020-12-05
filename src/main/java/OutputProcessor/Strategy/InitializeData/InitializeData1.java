@@ -11,7 +11,6 @@ public class InitializeData1 extends InitializeData {
 
     public void initializeData() {
         Datastore1 datastore1 = (Datastore1) datastore;
-        datastore1.setPrice(0);
         System.out.println("Initial Values Set. \n");
     }
 }

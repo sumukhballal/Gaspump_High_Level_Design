@@ -11,7 +11,10 @@ public class SetPrice1 extends SetPrice {
 
     public void setPrice(int g) {
         Datastore1 datastore1 = (Datastore1) datastore;
-        datastore1.setPrice(datastore1.getPrice()); /* Already set hence redundant */
+        datastore1.setPrice(datastore1.getPrice());
+        /* Set Price
+         * 0 - Regular Price
+        */
         System.out.println("Price set for Regular Gas : "+datastore1.getPrice()+" / Litre \n");
     }
 }

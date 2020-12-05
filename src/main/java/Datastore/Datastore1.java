@@ -2,14 +2,17 @@ package Datastore;
 
 public class Datastore1 extends Datastore {
 
-   private int temp_c;
-   private int cash;
-   private int total;
-   private int L;
-   private int price;
-   private int temp_a;
-   private int w;
+    /*  Datastore 1 Class */
 
+    private int temp_c; // Temporary Cash Value
+    private int cash; // Store Cash Value
+    private int total; // Total Dollars to Pay for Gas
+    private int L; // Total Litres Filled
+    private int price; // Price of gas Set
+    private int temp_a; // Temp value of Gas
+    private int w;  // Cash or not cash flag
+
+    /* Getters and Setters */
     public int getTemp_c() {
         return temp_c;
     }

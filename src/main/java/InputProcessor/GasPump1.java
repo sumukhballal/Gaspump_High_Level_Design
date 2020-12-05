@@ -7,18 +7,22 @@ import Factory.AbstractFactory;
 import Factory.GasPump1Factory;
 import OutputProcessor.OutputProcessor;
 
+
+/* Input Processor GasPump1 */
 public class GasPump1 {
 
     AbstractFactory abstractFactory;
     MDA_EFSM mda_efsm;
     Datastore datastore;
 
+    /* Initialize Connections to Factory/Datastore/MDA-EFSM */
     public GasPump1(AbstractFactory abstractFactory) {
         this.abstractFactory=abstractFactory;
         this.datastore=abstractFactory.getDatastore();
         this.mda_efsm=new MDA_EFSM(new OutputProcessor(abstractFactory));
     }
 
+    /* Display Operations Available for GP1 */
     public void displayOperations() {
 
         System.out.println("" +
@@ -35,6 +39,9 @@ public class GasPump1 {
                 "9.) StopPump \n" +
                 "q.) Quit\n >");
     }
+
+
+    /* Operations - Call the corresponding event */
 
     public void Activate(int a) {
         if(a>0)
@@ -68,7 +75,7 @@ public class GasPump1 {
         if(c>0)
         {
             Datastore1 datastore1 = (Datastore1) this.datastore;
-            datastore1.setTemp_c(c);
+            datastore1.setTemp_c(c); // Set Temp Cash
             mda_efsm.PayCash();
         }
         else {
@@ -85,7 +92,7 @@ public class GasPump1 {
         int cash = (w==1)?datastore1.getCash():0;
         int L = datastore1.getL();
 
-        /* W=1 for Cash and W=0 for Credit */
+        /* W=1 for Cash and W=0 for Credit/Debit */
 
         if((w==1 && (cash >= price*(L+1))) || w==0 )
         {

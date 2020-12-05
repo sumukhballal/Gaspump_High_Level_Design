@@ -5,11 +5,23 @@ import OutputProcessor.OutputProcessor;
 
 public class MDA_EFSM {
 
+    /* MDA-EFSM Context Class */
+
     State state;
     State[] LS;
 
     public MDA_EFSM(OutputProcessor outputProcessor)
     {
+
+        /* State 0 - Start
+        * State 1 - S0
+        * State 2 - S1
+        * State 3 - S2
+        * State 4 - S3
+        * State 5 - S4
+        * State 6 - S5
+        * */
+
         LS=new State[7];
         LS[0]=new Start(this, outputProcessor);
         LS[1]=new S0(this, outputProcessor);
@@ -21,15 +33,18 @@ public class MDA_EFSM {
         SetState(0);
     }
 
+    /* Set the current state */
     public void SetState(int s) {
         this.state=LS[s];
     }
 
+    /* Get the current state */
     public State GetState()
     {
         return this.state;
     }
 
+    /* Call corresponding state events */
     public void Activate() {
         state.Activate();
     }

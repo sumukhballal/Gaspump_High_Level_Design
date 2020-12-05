@@ -7,11 +7,15 @@ import Factory.AbstractFactory;
 import Factory.GasPump2Factory;
 import OutputProcessor.OutputProcessor;
 
+
+/* Input Processor GasPump2 */
+
 public class GasPump2 {
     AbstractFactory abstractFactory;
     MDA_EFSM mda_efsm;
     Datastore datastore;
 
+    /* Initialize Connections to Factory/Datastore/MDA-EFSM */
     public GasPump2(AbstractFactory abstractFactory)
     {
         this.abstractFactory=abstractFactory;
@@ -19,6 +23,7 @@ public class GasPump2 {
         this.mda_efsm=new MDA_EFSM(new OutputProcessor(abstractFactory));
     }
 
+    /* Display Operations Available for GP2 */
     public void displayOperations() {
 
         System.out.println("" +
@@ -40,6 +45,9 @@ public class GasPump2 {
                 "14.) FullTank \n" +
                 "q.) Quit\n");
     }
+
+
+    /* Operations - Call the corresponding event */
 
     public void Activate(float a, float b, float c) {
         if(a>0 && b>0 && c>0)

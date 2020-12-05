@@ -2,19 +2,20 @@ package Datastore;
 
 public class Datastore2 extends Datastore {
 
-    float temp_a;
-    float temp_b;
-    String temp_p;
-    String pin;
-    float price;
-    int G;          /* Total Gallons */
-    String gasType;    /* Gastype String */
-    float total;    /* Total Cost */
-    float Rprice;
-    float Dprice;
-    float temp_c;
-    float Sprice;
-    int w;
+    float temp_a; // Temporary Value of Regular Gas
+    float temp_b; // Temporary Value of Diesel Gas
+    float temp_c; // Temporary Value of Super Gas
+    String temp_p; // Temporary Value of Debit Pin
+    String pin; // Store Pin for Debit Card
+    float price; // Price of gas chosen
+    int G;    // Total Gallons Filled
+    String gasType;    // Current GAS Type String
+    float total;    // Total Dollars to Pay for Gas
+    float Rprice;   // Actual Price of Regular Gas
+    float Dprice;    // Actual Price of Diesel Gas
+    float Sprice;     // Actual Price of Super Gas
+    int w;       // Cash or not cash flag – Never Set
+
 
     public int getW() {
         return w;

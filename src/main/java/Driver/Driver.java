@@ -7,6 +7,8 @@ import InputProcessor.GasPump2;
 
 import java.util.Scanner;
 
+/* Main Driver Class */
+
 public class Driver {
 	public static void main(String[] args) {
 
@@ -17,7 +19,6 @@ public class Driver {
 			switch (pump) {
 				case "1":
 					GasPump1 gasPump1=startGasPump1();
-					gasPump1.displayOperations();
 					String input = "x";
 
 					while(!input.equals("q")) {
@@ -86,7 +87,6 @@ public class Driver {
 					break;
 				case "2":
 					GasPump2 gasPump2=startGasPump2();
-					gasPump2.displayOperations();
 					input = "x";
 
 					while(!input.equals("q")) {
@@ -98,11 +98,11 @@ public class Driver {
 							case "0":
 								System.out.println("Option : Activate \n ");
 								System.out.println("Please enter price of Regular Gas! \n > ");
-								int a = Integer.parseInt(scanner.next());
+								float a = Float.parseFloat(scanner.next());
 								System.out.println("Please enter price of Diesel Gas! \n > ");
-								int b = Integer.parseInt(scanner.next());
+								float b = Float.parseFloat(scanner.next());
 								System.out.println("Please enter price of Super Gas! \n > ");
-								int c = Integer.parseInt(scanner.next());
+								float c = Float.parseFloat(scanner.next());
 								gasPump2.Activate(a,b,c);
 								break;
 							case "1":
@@ -179,6 +179,7 @@ public class Driver {
 			}
 	}
 
+	/* Set the intial Factory values for GP1 */
 	private static GasPump1 startGasPump1()
 	{
 		GasPump1Factory gasPump1Factory = new GasPump1Factory();
@@ -187,6 +188,7 @@ public class Driver {
 		return gasPump1;
 	}
 
+	/* Set the intial Factory values for GP2 */
 	private static GasPump2 startGasPump2()
 	{
 		GasPump2Factory gasPump2Factory = new GasPump2Factory();

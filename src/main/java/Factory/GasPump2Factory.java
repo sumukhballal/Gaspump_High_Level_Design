@@ -31,6 +31,7 @@ import OutputProcessor.Strategy.SetPrice.SetPrice2;
 import OutputProcessor.Strategy.SetW.SetW;
 import OutputProcessor.Strategy.SetW.SetW2;
 import OutputProcessor.Strategy.StoreCash.StoreCash;
+import OutputProcessor.Strategy.StoreCash.StoreCash2;
 import OutputProcessor.Strategy.StorePin.StorePin;
 import OutputProcessor.Strategy.StorePin.StorePin2;
 import OutputProcessor.Strategy.StorePrices.StorePrices;
@@ -38,16 +39,24 @@ import OutputProcessor.Strategy.StorePrices.StorePrices2;
 import OutputProcessor.Strategy.WrongPinMsg.WrongPinMsg;
 import OutputProcessor.Strategy.WrongPinMsg.WrongPinMsg2;
 
+
+/* Abstract Factory 2 class */
+
+
 public class GasPump2Factory extends  AbstractFactory {
 
     Datastore datastore;
 
+    /* Set and return Datastore */
     public Datastore getDatastore() {
         if(this.datastore==null) {
             this.datastore = new Datastore2();
         }
         return this.datastore;
     }
+
+    /* Return Objects corresponding to GP2 - Output Processor */
+
 
     @Override
     public StorePrices getStorePrices() {
@@ -61,7 +70,7 @@ public class GasPump2Factory extends  AbstractFactory {
 
     @Override
     public StoreCash getStoreCash() {
-        return null;
+        return new StoreCash2(getDatastore());
     }
 
     @Override

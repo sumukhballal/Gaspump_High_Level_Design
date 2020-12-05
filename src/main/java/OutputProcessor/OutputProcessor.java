@@ -20,13 +20,63 @@ import OutputProcessor.Strategy.StorePrices.StorePrices;
 import OutputProcessor.Strategy.PayMsg.PayMsg;
 import OutputProcessor.Strategy.WrongPinMsg.WrongPinMsg;;
 
+
+/* Output Processor Base Class */
+
 public class OutputProcessor {
 
     AbstractFactory abstractFactory;
     int k;
 
+    /* Initialize once only */
+
+    private SetPrice setPrice;
+    private SetW setW;
+    private StoreCash storeCash;
+    private StorePin storePin;
+    private StorePrices storePrices;
+    private PayMsg payMsg;
+    private WrongPinMsg wrongPinMsg;
+    private CancelMsg cancelMsg;
+    private DisplayMenu displayMenu;
+    private EjectCard ejectCard;
+    private EnterPinMsg enterPinMsg;
+    private GasPumpedMsg gasPumpedMsg;
+    private InitializeData initializeData;
+    private PrintReceipt printReceipt;
+    private PumpGasUnit pumpGasUnit;
+    private RejectMsg rejectMsg;
+    private ReturnCash returnCash;
+    private SetInitialValues setInitialValues;
+
     public OutputProcessor(AbstractFactory abstractFactory) {
         this.abstractFactory=abstractFactory;
+
+        /* Set the objects only once hence we need to intialize this in the constructor */
+        intializeObjects(abstractFactory);
+    }
+
+    private void intializeObjects(AbstractFactory abstractFactory)
+    {
+        this.setW=abstractFactory.getSetW();
+        this.setPrice=abstractFactory.getSetPrice();
+        this.storeCash=abstractFactory.getStoreCash();
+        this.storePin=abstractFactory.getStorePin();
+        this.storePrices=abstractFactory.getStorePrices();
+        this.payMsg=abstractFactory.getPayMsg();
+        this.wrongPinMsg=abstractFactory.getWrongPinMsg();
+        this.cancelMsg=abstractFactory.getCancelMsg();
+        this.displayMenu=abstractFactory.getDisplayMenu();
+        this.ejectCard=abstractFactory.getEjectCard();
+        this.enterPinMsg=abstractFactory.getEnterPinMsg();
+        this.gasPumpedMsg=abstractFactory.getGasPumpedMsg();
+        this.initializeData=abstractFactory.getInitializeData();
+        this.printReceipt=abstractFactory.getPrintReceipt();
+        this.pumpGasUnit=abstractFactory.getPumpGasUnit();
+        this.rejectMsg=abstractFactory.getRejectMsg();
+        this.returnCash=abstractFactory.getReturnCash();
+        this.setInitialValues=abstractFactory.getSetInitialValue();
+
     }
 
     public int getK() {
@@ -36,78 +86,65 @@ public class OutputProcessor {
     public void setK(int k) {
         this.k = k;
     }
+
+
+    /* Call AbstractFactory of GP1 or GP2 and get the Correct Strategy Class Corresponding to it */
+
     public void StorePrices()
     {
-        StorePrices storePrices = this.abstractFactory.getStorePrices();
         storePrices.storePrices();
     }
 
     public void PayMsg() {
-        PayMsg payMsg = this.abstractFactory.getPayMsg();
         payMsg.payMsg();
     }
 
     public void StoreCash() {
-        StoreCash storeCash = this.abstractFactory.getStoreCash();
         storeCash.storeCash();
     }
     public void DisplayMenu()	 {
-        DisplayMenu displayMenu = this.abstractFactory.getDisplayMenu();
         displayMenu.displayMenu();
     }
     public void RejectMsg() {
-
+        rejectMsg.rejectMsg();
     }
     public void SetPrice(int g) {
-        SetPrice setPrice = this.abstractFactory.getSetPrice();
         setPrice.setPrice(g);
     }
     public void SetInitialValues() {
-        SetInitialValues setInitialValues = this.abstractFactory.getSetInitialValue();
         setInitialValues.setInitialValues();
     }
     public void PumpGasUnit() {
-        PumpGasUnit pumpGasUnit = this.abstractFactory.getPumpGasUnit();
         pumpGasUnit.pumpGasUnit();
     }
     public void GasPumpedMsg() {
-        GasPumpedMsg gasPumpedMsg = this.abstractFactory.getGasPumpedMsg();
         gasPumpedMsg.gasPumpedMsg();
     }
     public void PrintReceipt() {
-        PrintReceipt printReceipt = this.abstractFactory.getPrintReceipt();
         printReceipt.printReceipt();
     }
     public void CancelMsg() {
-        CancelMsg cancelMsg = this.abstractFactory.getCancelMsg();
         cancelMsg.cancelMsg();
     }
     public void ReturnCash() 	{
-        ReturnCash returnCash = this.abstractFactory.getReturnCash();
         returnCash.returnCash();
     }
     public void WrongPinMsg() {
-        WrongPinMsg wrongPinMsg = this.abstractFactory.getWrongPinMsg();
         wrongPinMsg.wrongPinMsg();
     }
     public void StorePin() {
-        StorePin storePin = this.abstractFactory.getStorePin();
         storePin.storePin();
     }
     public void EnterPinMsg() {
-        EnterPinMsg enterPinMsg = this.abstractFactory.getEnterPinMsg();
         enterPinMsg.enterPinMsg();
     }
     public void InitializeData() {
-        InitializeData initializeData = this.abstractFactory.getInitializeData();
         initializeData.initializeData();
     }
     public void EjectCard() {
-        EjectCard ejectCard = this.abstractFactory.getEjectCard();
         ejectCard.ejectCard();
     }
     public void SetW(int v) {
-        SetW setW = this.abstractFactory.getSetW();
         setW.setW(v);
     }
 }

@@ -10,6 +10,13 @@ public class SetPrice2 extends SetPrice {
     }
 
     public void setPrice(int g) {
+
+        /* Set Price
+         * 0 - Regular Price
+         * 1 - Diesel Price
+         * 2 - Super Price
+         *  */
+
         Datastore2 datastore2 = (Datastore2) datastore;
         if(g==1)
         {
